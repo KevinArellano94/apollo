@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "deno task build",
-    "dev": "deno task dev",
+    "build": "deno cache ./src/main.ts",
+    "dev": "deno run --watch --allow-env --allow-read --allow-net ./src/main.ts",
+    "dbuild": "deno task build",
+    "ddev": "deno task dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
